@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :api do
     resources :projects do
+      scope module: :projects do
+        resources :activities
+      end
       collection do
         get 'search' => 'projects#search'
       end
