@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -12,7 +14,6 @@ gem 'devise-encryptable'
 gem 'devise-i18n'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'dry-configurable', '0.9.0'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'kaminari'
 gem 'listen', '~> 3.2'
 gem 'paranoia', '~> 2.2'
@@ -21,6 +22,7 @@ gem 'pg_search'
 gem 'puma', '~> 4.1'
 gem 'rack-attack'
 gem 'rack-cors'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'rails-i18n'
 gem 'rubocop-rails'
 
@@ -48,4 +50,4 @@ group :test do
   gem 'simplecov-console', require: false
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
