@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module Api
   class ProjectsController < ApplicationController
-    load_and_authorize_resource
+    load_resource
 
     def index
       paginate json: @projects.order(name: :asc)
@@ -38,7 +40,6 @@ module Api
     end
 
     private
-
 
     def project_params
       params.permit(:name,

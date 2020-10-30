@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Api::ProjectsController, type: :request do
@@ -27,7 +29,6 @@ RSpec.describe Api::ProjectsController, type: :request do
   end
 
   describe '#POST /api/projects' do
-
     it 'should create a project' do
       attributes = attributes_for(:project)
       post api_projects_path,

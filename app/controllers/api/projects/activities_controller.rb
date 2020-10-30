@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 module Api
   module Projects
     class ActivitiesController < ApplicationController
+      load_resource
 
       def index
         render json: @activities
@@ -38,7 +41,7 @@ module Api
         params.permit(:name,
                       :start_date,
                       :end_date,
-                      :finished)
+                      :finished).merge(project_id: params[:project_id])
       end
     end
   end
