@@ -32,6 +32,6 @@ class ApplicationController < ActionController::API
   protected
 
   def current_ability
-    @current_ability ||= Ability.new(current_user(params))
+    @current_ability ||= Ability.new(current_user, params)
   end
 end
