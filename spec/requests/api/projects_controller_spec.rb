@@ -22,7 +22,9 @@ RSpec.describe Api::ProjectsController, type: :request do
   describe '#GET /api/projects/search' do
     it 'should search projects' do
       project = projects.sample
-      get search_api_projects_path, params: {q: project.name}, headers: unauthenticated_header
+      get search_api_projects_path,
+          params: { q: project.name },
+          headers: unauthenticated_header
       expect(response).to have_http_status(:ok)
       expect(response.body).to include(project.to_json)
     end
