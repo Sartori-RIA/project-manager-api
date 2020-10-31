@@ -1,5 +1,9 @@
 # Sartori Project Manager api
 
+[![Build Status](https://travis-ci.org/Sartori-RIA/project-manager-api.svg?branch=master)](https://travis-ci.org/Sartori-RIA/project-manager-api)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ce7ec83f6db523b5014a/maintainability)](https://codeclimate.com/github/Sartori-RIA/project-manager-api/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ce7ec83f6db523b5014a/test_coverage)](https://codeclimate.com/github/Sartori-RIA/project-manager-api/test_coverage)
+
 # Requirements
 
 + With docker
