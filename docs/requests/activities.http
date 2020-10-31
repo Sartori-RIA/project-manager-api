@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/projects/325/activities
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST http://localhost:3000/api/projects/126/activities
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "ASdasd",
+  "start_date": "2020-10-30T17:40:55.351Z",
+  "end_date": "2020-10-31T17:40:55.351Z"
+}
+
+###
+
+PUT http://localhost:3000/api/projects/325/activities/1243
+Content-Type: application/json
+Accept: application/json
+
+{
+  "finished": true
+}

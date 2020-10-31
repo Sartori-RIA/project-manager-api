@@ -5,7 +5,7 @@ module Api
     load_resource
 
     def index
-      paginate json: @projects.order(name: :asc)
+      paginate json: @projects
     end
 
     def show

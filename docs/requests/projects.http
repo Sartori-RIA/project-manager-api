@@ -1,0 +1,37 @@
+GET http://localhost:3000/api/projects
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3000/api/projects/325
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3000/api/projects/search?q=Editado
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST http://localhost:3000/api/projects
+Content-Type: application/json
+Accept: application/json
+
+###
+
+PUT http://localhost:3000/api/projects/325
+Content-Type: application/json
+Accept: application/json
+
+{
+ "name": "Editado"
+}
+###
+
+DELETE http://localhost:3000/api/projects/125
+Content-Type: application/json
+Accept: application/json
+
