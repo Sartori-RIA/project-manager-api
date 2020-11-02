@@ -10,10 +10,12 @@ class Activity < ApplicationRecord
   protected
 
   def calculate_project_progress
+    project = Project.find_by(id: project_id)
     size = Activity.where(project_id: project_id).count
     finished_activities = Activity.where(project_id: project_id, finished: true).count
 
     percent = (BigDecimal(finished_activities) / BigDecimal(size)) * 100
-    Project.update(project_id, progress: percent)
+
+    project.update(progress: percent, delayed: end_date > project.end_date)
   end
 end

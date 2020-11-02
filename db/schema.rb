@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_10_31_203233) do
     t.datetime "updated_at", precision: 6, null: false
     t.decimal "progress", default: "0.0"
     t.boolean "delayed", default: false
+    t.boolean "finished", default: false
     t.index ["deleted_at"], name: "index_projects_on_deleted_at"
   end
 

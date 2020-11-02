@@ -4,7 +4,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:3000/api/projects/325
+GET http://localhost:3000/api/projects/26
 Content-Type: application/json
 Accept: application/json
 
